@@ -6,3 +6,12 @@
 }
 /* can't touch this 🔨 */
 
+/* Grid */
+.grid-container {
+  display: grid;
+  /*Axa X*/
+  grid-template-columns: 150px 75px 400px 220px 20px;
+  /*Axa Y*/
+  grid-template-rows: 35px 200px 150px 65px;
+}
+
