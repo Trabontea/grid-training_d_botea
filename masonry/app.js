@@ -27,3 +27,22 @@ const urls = [
   'https://images.unsplash.com/photo-1501426026826-31c667bdf23d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHJhbmRvbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=640&q=80',
   'https://images.unsplash.com/photo-1504470695779-75300268aa0e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHJhbmRvbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=640&q=80',
 ];
+
+const container = document.querySelector('.container');
+const documentFragment =  new DocumentFragment();
+
+container.addEventListener('load', (event) => {
+  const image = event.target;
+  const spans = Math.round(image.height / 10 + 1)
+  image.parentElement.style.gridRowEnd= `span ${spans}`;
+}, true)
+
+urls.forEach((url) => {
+  const image = document.createElement('img');
+  const picture = document.createElement('picture');
+  image.src = url;
+  picture.append(image)
+  documentFragment.append(picture);
+})
+
+container.append(documentFragment);
