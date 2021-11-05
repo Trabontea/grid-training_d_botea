@@ -36,3 +36,29 @@
 .grid-item-5 {
   grid-column: 1 / span 2;
 }
+
+
+.grid-container-1 .grid-item-1 {
+  order: -2;
+}
+
+.grid-container-1 .grid-item-4 {
+  order: -1;
+}
+
+.grid-container-1 .grid-item-4 {
+  order: -1;
+}
+
+/*GRID 2*/
+.grid-container-2 .grid-item-4 {
+  order: -1;
+}
+
+.grid-container-2 .grid-item-2 {
+ order: 1;
+}
+
+.grid-container-2 .grid-item-1 {
+  order: 2;
+}

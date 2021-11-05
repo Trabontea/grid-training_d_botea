@@ -1,0 +1,14 @@
+.grid-container {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-rows: repeat(3, 45px);
+    grid-template-columns: repeat(3, 45px);
+    justify-content: center;
+    align-content: center;
+}
+
+.body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}

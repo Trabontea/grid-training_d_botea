@@ -27,3 +27,33 @@
 /* can't touch this 🔨 */
 
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 120px 1fr 400px 2fr 350px 10px;
+  grid-template-rows:150px ;
+}
+
+.grid-item-1  {
+  justify-self: end;
+  align-self: end;
+}
+
+.grid-item-2 {
+ justify-self: center;
+  align-self: start;
+}
+
+.grid-item-3 {
+  justify-self: end;
+  align-self: center;
+}
+
+.grid-item-4 {
+  justify-self: start;
+  align-self: start;
+}
+
+.grid-item-5 {
+  justify-self: start;
+  align-self: end;
+}
